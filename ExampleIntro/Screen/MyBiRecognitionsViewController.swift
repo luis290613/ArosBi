@@ -91,7 +91,7 @@ class MyBiRecognitionsViewController: UIViewController {
     
     func setupUI() {
         title = "Mis Reconocimientos Bi"
-        
+        view.backgroundColor = .white
         // ITems...
         totalView.setupUI(title: "10", description: "Total", colorBack: .blue, colorTitle: .white)
         availableView.setupUI(title: "5", description: "Disponibles", colorBack: .yellow, colorTitle: .black)

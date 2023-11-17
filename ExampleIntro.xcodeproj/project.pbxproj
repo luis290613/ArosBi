@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F100C9B62B06995E00B5DE41 /* HomeRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100C9B52B06995E00B5DE41 /* HomeRecognitionViewController.swift */; };
+		F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */; };
 		F12489232B044CCE009FC55E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12489222B044CCE009FC55E /* UITextField+Extension.swift */; };
 		F18B42DA2B058A92005D5D6B /* MyBiRecognitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */; };
 		F1D2B8F42B02E5D900944B5E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1D2B8F32B02E5D900944B5E /* SnapKit */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F100C9B52B06995E00B5DE41 /* HomeRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecognitionViewController.swift; sourceTree = "<group>"; };
+		F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecognitionCell.swift; sourceTree = "<group>"; };
 		F12489222B044CCE009FC55E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBiRecognitionsViewController.swift; sourceTree = "<group>"; };
 		F1E566CB2AFEBC4E00DD9461 /* ExampleIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F100C9B42B06993300B5DE41 /* HomeRecognitions */ = {
+			isa = PBXGroup;
+			children = (
+				F100C9BB2B06DE5300B5DE41 /* HomeRecognitionCell */,
+				F100C9B52B06995E00B5DE41 /* HomeRecognitionViewController.swift */,
+			);
+			path = HomeRecognitions;
+			sourceTree = "<group>";
+		};
+		F100C9BB2B06DE5300B5DE41 /* HomeRecognitionCell */ = {
+			isa = PBXGroup;
+			children = (
+				F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */,
+			);
+			path = HomeRecognitionCell;
+			sourceTree = "<group>";
+		};
 		F12489212B044CBA009FC55E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +111,7 @@
 		F1E566E22AFEC04700DD9461 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F100C9B42B06993300B5DE41 /* HomeRecognitions */,
 				F1E566E32AFEC08A00DD9461 /* FilterDateViewController.swift */,
 				F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */,
 			);
@@ -175,10 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12489232B044CCE009FC55E /* UITextField+Extension.swift in Sources */,
+				F100C9B62B06995E00B5DE41 /* HomeRecognitionViewController.swift in Sources */,
 				F18B42DA2B058A92005D5D6B /* MyBiRecognitionsViewController.swift in Sources */,
 				F1E566D32AFEBC4E00DD9461 /* ViewController.swift in Sources */,
 				F1E566CF2AFEBC4E00DD9461 /* AppDelegate.swift in Sources */,
 				F1E566E42AFEC08A00DD9461 /* FilterDateViewController.swift in Sources */,
+				F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */,
 				F1E566D12AFEBC4E00DD9461 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -66,7 +66,7 @@ class FilterDateViewController: UIViewController {
     
     func setupView() {
         title = "Mis Reconocimientos Bi"
-        
+        view.backgroundColor = .white
         filterStartTxt.rightView = getIcon()
         filterStartTxt.rightViewMode = .always
         
@@ -104,6 +104,16 @@ class FilterDateViewController: UIViewController {
         
         filterStartTxt.setLeftPadding(10)
         filterEndtTxt.setLeftPadding(10)
+        
+        
+        // Test
+        filterBtn.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+
+    }
+    
+    @objc func buttonPressed() {
+        print("¡Botón presionado!")
+        navigationController?.pushViewController(MyBiRecognitionsViewController(), animated: true)
     }
     
     func setupPicker() {
