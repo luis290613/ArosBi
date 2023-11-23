@@ -10,9 +10,11 @@
 		F100C9B62B06995E00B5DE41 /* HomeRecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100C9B52B06995E00B5DE41 /* HomeRecognitionViewController.swift */; };
 		F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */; };
 		F12489232B044CCE009FC55E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12489222B044CCE009FC55E /* UITextField+Extension.swift */; };
+		F12775CE2B0EC98900FBA4DE /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12775CD2B0EC98900FBA4DE /* DetailViewCell.swift */; };
 		F18B42DA2B058A92005D5D6B /* MyBiRecognitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */; };
 		F1D2B8F42B02E5D900944B5E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1D2B8F32B02E5D900944B5E /* SnapKit */; };
 		F1D2B8F62B02E5D900944B5E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D2B8F52B02E5D900944B5E /* SnapKit-Dynamic */; };
+		F1D462D72B0D75E600D291EC /* DetailRecognitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D462D62B0D75E600D291EC /* DetailRecognitionsViewController.swift */; };
 		F1E566CF2AFEBC4E00DD9461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E566CE2AFEBC4E00DD9461 /* AppDelegate.swift */; };
 		F1E566D12AFEBC4E00DD9461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E566D02AFEBC4E00DD9461 /* SceneDelegate.swift */; };
 		F1E566D32AFEBC4E00DD9461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E566D22AFEBC4E00DD9461 /* ViewController.swift */; };
@@ -26,7 +28,9 @@
 		F100C9B52B06995E00B5DE41 /* HomeRecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecognitionViewController.swift; sourceTree = "<group>"; };
 		F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecognitionCell.swift; sourceTree = "<group>"; };
 		F12489222B044CCE009FC55E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		F12775CD2B0EC98900FBA4DE /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBiRecognitionsViewController.swift; sourceTree = "<group>"; };
+		F1D462D62B0D75E600D291EC /* DetailRecognitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecognitionsViewController.swift; sourceTree = "<group>"; };
 		F1E566CB2AFEBC4E00DD9461 /* ExampleIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E566CE2AFEBC4E00DD9461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E566D02AFEBC4E00DD9461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,39 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F12775CB2B0EC94A00FBA4DE /* DetailRecognitions */ = {
+			isa = PBXGroup;
+			children = (
+				F12775CC2B0EC95800FBA4DE /* Cell */,
+				F1D462D62B0D75E600D291EC /* DetailRecognitionsViewController.swift */,
+			);
+			path = DetailRecognitions;
+			sourceTree = "<group>";
+		};
+		F12775CC2B0EC95800FBA4DE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F12775CD2B0EC98900FBA4DE /* DetailViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F12775CF2B0F9E2B00FBA4DE /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				F1E566E32AFEC08A00DD9461 /* FilterDateViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		F12775D02B0F9E3B00FBA4DE /* MyRecognitions */ = {
+			isa = PBXGroup;
+			children = (
+				F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */,
+			);
+			path = MyRecognitions;
+			sourceTree = "<group>";
+		};
 		F1E566C22AFEBC4E00DD9461 = {
 			isa = PBXGroup;
 			children = (
@@ -112,8 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				F100C9B42B06993300B5DE41 /* HomeRecognitions */,
-				F1E566E32AFEC08A00DD9461 /* FilterDateViewController.swift */,
-				F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */,
+				F12775CF2B0F9E2B00FBA4DE /* Filter */,
+				F12775D02B0F9E3B00FBA4DE /* MyRecognitions */,
+				F12775CB2B0EC94A00FBA4DE /* DetailRecognitions */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -203,6 +241,8 @@
 				F1E566CF2AFEBC4E00DD9461 /* AppDelegate.swift in Sources */,
 				F1E566E42AFEC08A00DD9461 /* FilterDateViewController.swift in Sources */,
 				F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */,
+				F12775CE2B0EC98900FBA4DE /* DetailViewCell.swift in Sources */,
+				F1D462D72B0D75E600D291EC /* DetailRecognitionsViewController.swift in Sources */,
 				F1E566D12AFEBC4E00DD9461 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -232,7 +232,6 @@ class CustomTableViewCell: UITableViewCell {
         
     }
 
-    // Método para configurar el contenido de la celda
     func configure(dateCreation: String, state : String, title: String, description: String) {
         dateCreationStateLbl.text = "\(dateCreation)  |  \(state)"
         titleLbl.text = title
