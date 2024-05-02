@@ -45,9 +45,9 @@ var itemMedalRecognitions : [dataDetailRecognition.medalRecognition] = [
     dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Desenpeño"),
     dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Entrega"),
     dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Integridad"),
-//    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Amor a la patria"),
-//    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Desenpeño"),
-//    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Desenpeño")
+    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Amor a la patria"),
+    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Desenpeño"),
+    dataDetailRecognition.medalRecognition(icon: "graduationcap", title: "Desenpeño")
 ]
 
 var dataDetailRecognitions : dataDetailRecognition = dataDetailRecognition(
@@ -112,7 +112,7 @@ extension DetailRecognitionsViewController {
     
     
     // Celda para medallas
-    class medalCustomViewCell: UICollectionViewCell {
+    class DetailCollectionViewCell: UICollectionViewCell {
         
         private let contenIconView : UIView = {
             let view = UIView()

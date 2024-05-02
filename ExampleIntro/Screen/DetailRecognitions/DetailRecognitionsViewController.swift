@@ -9,8 +9,10 @@ import UIKit
 import SnapKit
 
 class DetailRecognitionsViewController: UIViewController {
-
+    
     let data : dataDetailRecognition = dataDetailRecognitions
+    var widthItemCollection : CGFloat = 0
+    var heightItemCollection : CGFloat = 0
     
     let scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -26,7 +28,7 @@ class DetailRecognitionsViewController: UIViewController {
     
     let topView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.gray.withAlphaComponent(0.1)
+        view.backgroundColor = .gray
         return view
     }()
     
@@ -56,6 +58,8 @@ class DetailRecognitionsViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = .white
         title = "Detalle"
+        widthItemCollection = (view.bounds.width - 30) / 4
+        heightItemCollection = widthItemCollection + 20
 
         view.addSubview(scrollView)
         scrollView.addSubview(containerView)
@@ -97,32 +101,34 @@ class DetailRecognitionsViewController: UIViewController {
     }
     
     private func setupMedailsCollection() {
-        collectionView.register(medalCustomViewCell.self, forCellWithReuseIdentifier: "medalCustomViewCell")
+        collectionView.register(DetailCollectionViewCell.self, forCellWithReuseIdentifier: "DetailCollectionViewCell")
         collectionView.dataSource = self
         collectionView.delegate = self
         
         containerView.addSubview(collectionView)
         
-        let heightItemCollection = (view.frame.width / 4) + 20
+        print("Diego...... widthItemCollection: \(widthItemCollection)")
         print("Diego...... heightItemCollection: \(heightItemCollection)")
         
-        let numberRow = (Double(data.recognition.count) / Double(4)).redondearHaciaArriba()
+        let numberRow = (Double(data.recognition.count) / Double(4)).rounded(.up)
         print("Diego...... numberRow: \(numberRow)")
         
-        let heightFinal = numberRow * heightItemCollection
-        print("Diego...... heightFinal: \(heightFinal)")
-            
-             
+        let heightCollection = numberRow * heightItemCollection
+        print("Diego...... heightFinal: \(heightCollection)")
+        
+        
         collectionView.snp.makeConstraints { make in
-            make.horizontalEdges.equalToSuperview()
+            make.leading.equalToSuperview().offset(15)
+            make.trailing.equalToSuperview().offset(-15)
             make.top.equalTo(stackView.snp.bottom).offset(20)
             make.bottom.equalToSuperview()
-            make.height.equalTo(heightFinal)
+            make.height.equalTo(heightCollection)
         }
+        
     }
 }
 
-
+// MARK: Configuration CollectionView
 extension DetailRecognitionsViewController:  UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -130,7 +136,7 @@ extension DetailRecognitionsViewController:  UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "medalCustomViewCell", for: indexPath) as? medalCustomViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailCollectionViewCell", for: indexPath) as? DetailCollectionViewCell else {
             return UICollectionViewCell()
         }
         cell.backgroundColor = .white
@@ -140,23 +146,7 @@ extension DetailRecognitionsViewController:  UICollectionViewDataSource, UIColle
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width / 4
-        let height = (width + 20)
-        return CGSize(width: width, height: height)
+        return CGSize(width: widthItemCollection, height: widthItemCollection + 20)
     }
 
-}
-
-
-extension Double {
-    func redondearHaciaArriba() -> Double {
-        let redondeado = self.rounded(.up)
-        let decimal = self - redondeado
-
-        if decimal > 0.1 {
-            return redondeado + 1.0
-        } else {
-            return redondeado
-        }
-    }
 }

@@ -11,7 +11,16 @@
 		F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */; };
 		F12489232B044CCE009FC55E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12489222B044CCE009FC55E /* UITextField+Extension.swift */; };
 		F12775CE2B0EC98900FBA4DE /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12775CD2B0EC98900FBA4DE /* DetailViewCell.swift */; };
+		F17C53522B221DD400647E5A /* CustomButtonIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C53512B221DD400647E5A /* CustomButtonIcon.swift */; };
+		F180FCE82B306ED900DB4DFD /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180FCE72B306ED900DB4DFD /* CustomAlertViewController.swift */; };
+		F180FCF52B30B0E700DB4DFD /* ViewControllerV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F180FCF42B30B0E600DB4DFD /* ViewControllerV3.swift */; };
 		F18B42DA2B058A92005D5D6B /* MyBiRecognitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */; };
+		F1A721AD2B263A06000B6742 /* ListGestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721AC2B263A06000B6742 /* ListGestionsViewController.swift */; };
+		F1A721B32B2669EC000B6742 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721B22B2669EC000B6742 /* UIView+Extension.swift */; };
+		F1A721B52B266A24000B6742 /* IconRightTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721B42B266A24000B6742 /* IconRightTextField.swift */; };
+		F1A721BB2B267700000B6742 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721BA2B267700000B6742 /* String+Extension.swift */; };
+		F1A721BD2B26783B000B6742 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721BC2B26783B000B6742 /* Date+Extension.swift */; };
+		F1A721BF2B275926000B6742 /* DetailGestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A721BE2B275926000B6742 /* DetailGestionsViewController.swift */; };
 		F1D2B8F42B02E5D900944B5E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1D2B8F32B02E5D900944B5E /* SnapKit */; };
 		F1D2B8F62B02E5D900944B5E /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F1D2B8F52B02E5D900944B5E /* SnapKit-Dynamic */; };
 		F1D462D72B0D75E600D291EC /* DetailRecognitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D462D62B0D75E600D291EC /* DetailRecognitionsViewController.swift */; };
@@ -29,7 +38,16 @@
 		F100C9BC2B06DE6800B5DE41 /* HomeRecognitionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRecognitionCell.swift; sourceTree = "<group>"; };
 		F12489222B044CCE009FC55E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		F12775CD2B0EC98900FBA4DE /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		F17C53512B221DD400647E5A /* CustomButtonIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonIcon.swift; sourceTree = "<group>"; };
+		F180FCE72B306ED900DB4DFD /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		F180FCF42B30B0E600DB4DFD /* ViewControllerV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerV3.swift; sourceTree = "<group>"; };
 		F18B42D92B058A92005D5D6B /* MyBiRecognitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBiRecognitionsViewController.swift; sourceTree = "<group>"; };
+		F1A721AC2B263A06000B6742 /* ListGestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGestionsViewController.swift; sourceTree = "<group>"; };
+		F1A721B22B2669EC000B6742 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F1A721B42B266A24000B6742 /* IconRightTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconRightTextField.swift; sourceTree = "<group>"; };
+		F1A721BA2B267700000B6742 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F1A721BC2B26783B000B6742 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F1A721BE2B275926000B6742 /* DetailGestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGestionsViewController.swift; sourceTree = "<group>"; };
 		F1D462D62B0D75E600D291EC /* DetailRecognitionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecognitionsViewController.swift; sourceTree = "<group>"; };
 		F1E566CB2AFEBC4E00DD9461 /* ExampleIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E566CE2AFEBC4E00DD9461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +94,9 @@
 			isa = PBXGroup;
 			children = (
 				F12489222B044CCE009FC55E /* UITextField+Extension.swift */,
+				F1A721B22B2669EC000B6742 /* UIView+Extension.swift */,
+				F1A721BA2B267700000B6742 /* String+Extension.swift */,
+				F1A721BC2B26783B000B6742 /* Date+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -113,6 +134,23 @@
 			path = MyRecognitions;
 			sourceTree = "<group>";
 		};
+		F17C53502B221DAF00647E5A /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F17C53512B221DD400647E5A /* CustomButtonIcon.swift */,
+				F1A721B42B266A24000B6742 /* IconRightTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		F1A721AB2B2639EE000B6742 /* ListGestions */ = {
+			isa = PBXGroup;
+			children = (
+				F1A721AC2B263A06000B6742 /* ListGestionsViewController.swift */,
+			);
+			path = ListGestions;
+			sourceTree = "<group>";
+		};
 		F1E566C22AFEBC4E00DD9461 = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +170,15 @@
 		F1E566CD2AFEBC4E00DD9461 /* ExampleIntro */ = {
 			isa = PBXGroup;
 			children = (
+				F17C53502B221DAF00647E5A /* CustomView */,
 				F12489212B044CBA009FC55E /* Extension */,
 				F1E566E22AFEC04700DD9461 /* Screen */,
 				F1E566CE2AFEBC4E00DD9461 /* AppDelegate.swift */,
+				F180FCE72B306ED900DB4DFD /* CustomAlertViewController.swift */,
+				F180FCF42B30B0E600DB4DFD /* ViewControllerV3.swift */,
 				F1E566D02AFEBC4E00DD9461 /* SceneDelegate.swift */,
 				F1E566D22AFEBC4E00DD9461 /* ViewController.swift */,
+				F1A721BE2B275926000B6742 /* DetailGestionsViewController.swift */,
 				F1E566D42AFEBC4E00DD9461 /* Main.storyboard */,
 				F1E566D72AFEBC5100DD9461 /* Assets.xcassets */,
 				F1E566D92AFEBC5100DD9461 /* LaunchScreen.storyboard */,
@@ -148,6 +190,7 @@
 		F1E566E22AFEC04700DD9461 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F1A721AB2B2639EE000B6742 /* ListGestions */,
 				F100C9B42B06993300B5DE41 /* HomeRecognitions */,
 				F12775CF2B0F9E2B00FBA4DE /* Filter */,
 				F12775D02B0F9E3B00FBA4DE /* MyRecognitions */,
@@ -234,15 +277,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1A721AD2B263A06000B6742 /* ListGestionsViewController.swift in Sources */,
+				F1A721B32B2669EC000B6742 /* UIView+Extension.swift in Sources */,
+				F180FCE82B306ED900DB4DFD /* CustomAlertViewController.swift in Sources */,
 				F12489232B044CCE009FC55E /* UITextField+Extension.swift in Sources */,
 				F100C9B62B06995E00B5DE41 /* HomeRecognitionViewController.swift in Sources */,
+				F17C53522B221DD400647E5A /* CustomButtonIcon.swift in Sources */,
+				F1A721BD2B26783B000B6742 /* Date+Extension.swift in Sources */,
 				F18B42DA2B058A92005D5D6B /* MyBiRecognitionsViewController.swift in Sources */,
 				F1E566D32AFEBC4E00DD9461 /* ViewController.swift in Sources */,
 				F1E566CF2AFEBC4E00DD9461 /* AppDelegate.swift in Sources */,
 				F1E566E42AFEC08A00DD9461 /* FilterDateViewController.swift in Sources */,
 				F100C9BD2B06DE6800B5DE41 /* HomeRecognitionCell.swift in Sources */,
 				F12775CE2B0EC98900FBA4DE /* DetailViewCell.swift in Sources */,
+				F1A721B52B266A24000B6742 /* IconRightTextField.swift in Sources */,
+				F1A721BF2B275926000B6742 /* DetailGestionsViewController.swift in Sources */,
+				F180FCF52B30B0E700DB4DFD /* ViewControllerV3.swift in Sources */,
 				F1D462D72B0D75E600D291EC /* DetailRecognitionsViewController.swift in Sources */,
+				F1A721BB2B267700000B6742 /* String+Extension.swift in Sources */,
 				F1E566D12AFEBC4E00DD9461 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
